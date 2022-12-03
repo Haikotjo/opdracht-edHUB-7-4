@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Form validation</title>
 </head>
 <body>
+<div class="box">
 
+<form id="signup-form">
+    <h1 class="titel1">Registreren</h1>
+    <label class="labe-title" for="username-field">Gebrukersnaam:</label>
+    <input
+            type="text"
+            name="username"
+            id="username-field"
+            placeholder="Username"
+    />
+    <p id="wrong-character">Gebruikersnaam mag geen @ gebruiken</p>
+    <label class="labe-title" for="password-field">Wachtwoord:</label>
+    <input
+            type="password"
+            name="password"
+            id="password-field"
+            placeholder="Password"
+    />
+    <p id="password-short">Wachtwoord is te kort</p>
+    <button type="submit">sign up</button>
+</form>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
